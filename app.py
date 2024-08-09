@@ -50,7 +50,7 @@ def generate_resume(output_filename, details):
 
     experience_text = ""
     for experience in details['Experiences']:
-        role = generate_result(f"Sample responsibilities about {experience} for resume, no heading and bullet points, concise, at most 3 points")
+        role = generate_result(f"Sample responsibilities about {experience} for resume, no heading, and in bullet points, concise, at most 3 points")
         experience_text += f"""
         - <b>{experience}</b><br/>
         {role}<br/>
